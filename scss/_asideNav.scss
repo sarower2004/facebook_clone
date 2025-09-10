@@ -1,0 +1,208 @@
+
+.main-contents-wrapper{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+   
+}
+aside{
+    width: 22%;
+   
+}
+.main-aside{
+    width: 100%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    .profile{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    .menu-item{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+        &:hover{
+            background-color: rgba(0,0,0,0.05);
+        }
+        i{
+            font-size: $font-size-base*1.8;
+            color: $primary-color;
+        }
+        p{
+            font-size: $font-size-base;
+            font-weight: 500;
+        }
+    }
+}
+
+.main-wrapper{
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    
+}
+.main-wrapper .post-section{
+        width: 100%;
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        .post-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            .post-profile-pic{
+
+                width: 50px;
+                height: 50px;
+                line-height: 75px;
+
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .post-input{
+                width: 100%;
+                padding: 10px 15px;
+                border-radius: 999px;
+                border: 1px solid #ccc;
+                outline: none;
+                &:focus{
+                    border-color: $primary-color;
+                }
+                input{
+                    outline: none;
+                    border: none;
+                     font-size: $font-size-base;
+
+                }
+            }
+            .input-icon{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding: 10px 0;
+                i{
+                    font-size: $font-size-base*1.5;
+                    color: $primary-color;
+                    cursor: pointer;
+                    transition: color 0.3s ease;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+        
+    }
+.story-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    
+}
+.story-item{
+    width: 120px;
+    height: 170px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    overflow: hidden;
+    .story-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        transform: scale(1.5);
+        filter: brightness(0.7);
+        transition: transform 0.3s ease;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    .create-story{
+        position: absolute;
+        left: 12%;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        i{
+            font-size: $font-size-base;
+            color: $primary-color;
+            font-weight: bold;
+            background-color: white;
+            border-radius: 50%;
+            padding: 10px;
+
+        }
+        p{
+            width: 100%;
+            font-size: $font-size-base*0.7;
+            font-weight: 600;
+            color: black;
+        }
+    }
+    .story-profile-pic{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 3px solid $primary-color;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+        }
+        i{
+            font-size: $font-size-base*2;
+            color: $primary-color;
+        }
+    }
+    p{
+        position: absolute;
+        bottom: 10px;
+        left: 5px;
+        color: white;
+        font-size: $font-size-base*0.9;
+        font-weight: 600;
+        z-index: 2;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.7);}
+}
+
