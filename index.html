@@ -30,20 +30,20 @@
                     </div>
                 </div>  
                 <div class="nav-center">
-                    <div class="nav-item active">
-                        <i class="bi bi-house-door-fill"></i>
+                    <div class="nav-item ">
+                       <button class="nav-btn" data-page="home"><i class="bi bi-house-door-fill"></i></button>
                     </div>
                     <div class="nav-item">
-                        <i class="bi bi-cast"></i>
+                        <button class="nav-btn" data-page="video"><i class="bi bi-cast"></i></button>
                     </div>     
                     <div class="nav-item">
-                        <i class="bi bi-shop"></i>
+                        <button class="nav-btn" data-page="shop"><i class="bi bi-shop"></i></button>
                     </div>     
                     <div class="nav-item">
-                      <i class="bi bi-people"></i>
+                      <button class="nav-btn" data-page="groups"><i class="bi bi-people"></i></button>
                     </div>     
                     <div class="nav-item">
-                        <i class="bi bi-controller"></i>
+                        <button class="nav-btn" data-page="gaming"><i class="bi bi-controller"></i></button>
                     </div>     
                 </div>
                 <div class="nav-right">
@@ -65,13 +65,13 @@
     </header>
     <!-- end header section -->
 
-    <!-- Main contents -->
-     <section class="main-contents">
+    <!-- Home contents -->
+     <section class="main-contents page" id="home">
         <div class="container">
             <div class="main-contents-wrapper">
                 <!-- Aside Nav -->
-                <aside>
-                    <div class="aside-wrapper">
+                <aside class="home-aside">
+                    <div class="aside-wrapper ">
 
                         <div class="main-aside">
                                 <div class="profile">
@@ -122,7 +122,7 @@
                 <!-- End Aside Nav -->
                 <!-- Main section -->
                 <main>
-                    <div class="main-wrapper">
+                    <div class="main-wrapper" >
                         <div class="post-section">
                             <div class="post-wrapper">
                                 <div class="post-profile-pic">
@@ -191,7 +191,6 @@
                     </div>
                 </main>
                 <!-- End Main section -->
-                <!-- Right Aside -->
                 <!-- Aside Nav -->
                 <aside>
                     <div class="aside-wrapper">
@@ -247,7 +246,85 @@
         </div>
      </section> 
 
-                
+    <!-- End Home contents -->
 
+    <!-- media page -->
+     <section class="mediapage page" id="video" >
+        <div class="container"> 
+         <div class="media-wrapper">
+            <div class="media-aside">
+                <!-- Aside Nav -->
+                <aside >
+                    <div class="aside-wrapper">
+
+                        <div class="main-aside">
+                                <div class="profile">
+                                    <div class="profile-pic">
+                                        <img width="15%" src="image/profile.jpg" alt="">
+                                    </div>
+                                    <p>Sarower Jahan</p>
+                            </div>
+                            <div class="menu-item">
+                                <i class="bi bi-people-fill"></i>
+                                <p>Friends</p>
+                            </div>
+                            <div class="menu-item">
+                                <i class="bi bi-chat-dots-fill"></i>
+                                <p>Professional Dashboard</p>
+                            </div>
+                            <div class="menu-item">
+                                <i class="bi bi-flag-fill"></i>
+                                <p>Feeds</p>
+                            </div>
+                            <div class="menu-item">
+                                <i class="bi bi-shop-window"></i>
+                                <p>Groups</p>
+                            </div>
+                            <div class="menu-item">
+                                <i class="bi bi-tv-fill"></i>
+                                <p>Marketplace</p>
+                            </div>
+                            <div class="menu-item">
+                                <i class="bi bi-calendar-event-fill"></i>
+                                <p>Vedio</p>
+                            </div>
+                            <div class="menu-item">
+                                <i class="bi bi-collection-play-fill"></i>
+                                <p>Add Center</p>
+                            </div>
+                            <div class="menu-item">
+                                <i class="bi bi-bookmark-fill"></i>
+                                <p>Saved</p>
+                            </div>
+                            <div class="menu-item">
+                                <i class="bi bi-arrow-down-circle-fill"></i>
+                                <p>See More</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="media-content">
+                <div class="media-item">
+                 <video width="100%" controls>
+                     <source src="video/video1.mp4" type="video/mp4">
+                     </video>
+                </div>
+                <div class="media-item">
+                    <video width="100%" controls>
+                        <source src="video/video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                 <div class="media-item">
+                    <video width="100%" controls>
+                        <source src="video/video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+            </div>
+        </div>
+     </section>
+
+     <script src="js/script.js"></script>
 </body>
 </html>
