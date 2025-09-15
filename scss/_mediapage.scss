@@ -1,18 +1,34 @@
 .media-wrapper{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
     gap: 40px;
 
     .media-aside{
         width: 30%;
-        background-color: white;
         border-radius: 10px;
         box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        background: #fff;
         height: fit-content;
+    }
+}
 
-        .profile{
+
+.media-content{
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.media-item{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background: #fff;
+
+    .profile{
             display: flex;
             align-items: center;
             gap: 10px;
@@ -23,22 +39,6 @@
                 border-radius: 50%;
             }
         }
-    }
-}
-
-
-.media-content{
-    width: 70%;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 20px;
-}
-.media-item{
-    margin-bottom: 20px;
-    width: 100%;
 }
 
 video {

@@ -50,11 +50,25 @@
             font-weight: 500;
         }
     }
+    .profile{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
 }
 
 .main-wrapper{
     width: 100%;
-    padding: 20px;
     
 }
 .main-wrapper .post-section{
@@ -150,7 +164,7 @@
     
         i{  
             position: absolute;
-            top: 70%;
+            top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: $font-size-base;
@@ -163,7 +177,7 @@
         }
         p{  
             color: black;
-            margin-left: 5px;
+            margin-left: 15px;
         }
     }
     .story-profile-pic{

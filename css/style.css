@@ -172,10 +172,24 @@ header nav .nav-wrapper .nav-right .nav-icon i {
   font-size: 16px;
   font-weight: 500;
 }
+.main-aside .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.main-aside .profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.main-aside .profile p {
+  font-size: 16px;
+  font-weight: 600;
+}
 
 .main-wrapper {
   width: 100%;
-  padding: 20px;
 }
 
 .main-wrapper .post-section {
@@ -267,7 +281,7 @@ header nav .nav-wrapper .nav-right .nav-icon i {
 }
 .story-item .create-story i {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 16px;
@@ -279,7 +293,7 @@ header nav .nav-wrapper .nav-right .nav-icon i {
 }
 .story-item .create-story p {
   color: black;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 .story-item .story-profile-pic {
   position: absolute;
@@ -317,35 +331,20 @@ header nav .nav-wrapper .nav-right .nav-icon i {
 .media-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
   gap: 40px;
 }
 .media-wrapper .media-aside {
   width: 30%;
-  background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background: #fff;
   height: fit-content;
-}
-.media-wrapper .media-aside .profile {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.media-wrapper .media-aside .profile img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
 }
 
 .media-content {
   width: 70%;
-  padding: 20px;
   border-radius: 10px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
 }
@@ -353,6 +352,21 @@ header nav .nav-wrapper .nav-right .nav-icon i {
 .media-item {
   margin-bottom: 20px;
   width: 100%;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #fff;
+}
+.media-item .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.media-item .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 video {
